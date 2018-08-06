@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6215B8B6-FBC3-4815-AF58-4DAD535049E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pilates_CS</RootNamespace>
+    <AssemblyName>Pilates_CS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Npgsql, Version=4.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.0.2\lib\net451\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.0\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="autenticacao.cs" />
+    <Compile Include="conexao.cs" />
+    <Compile Include="fm_agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_agenda.Designer.cs">
+      <DependentUpon>fm_agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_anual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_anual.Designer.cs">
+      <DependentUpon>fm_anual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_balanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_balanco.Designer.cs">
+      <DependentUpon>fm_balanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_editarPac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_editarPac.Designer.cs">
+      <DependentUpon>fm_editarPac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_editPac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_editPac.Designer.cs">
+      <DependentUpon>fm_editPac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_caixa.Designer.cs">
+      <DependentUpon>fm_caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_conta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_conta.Designer.cs">
+      <DependentUpon>fm_conta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_diario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_diario.Designer.cs">
+      <DependentUpon>fm_diario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_editConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_editConta.Designer.cs">
+      <DependentUpon>fm_editConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_editPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_editPlano.Designer.cs">
+      <DependentUpon>fm_editPlano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_editProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_editProf.Designer.cs">
+      <DependentUpon>fm_editProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_entrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_entrada.Designer.cs">
+      <DependentUpon>fm_entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_fechar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_fechar.Designer.cs">
+      <DependentUpon>fm_fechar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_mensal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_mensal.Designer.cs">
+      <DependentUpon>fm_mensal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_novaConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_novaConta.Designer.cs">
+      <DependentUpon>fm_novaConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_novoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_novoPaciente.Designer.cs">
+      <DependentUpon>fm_novoPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_novoPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_novoPlano.Designer.cs">
+      <DependentUpon>fm_novoPlano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_novoProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_novoProf.Designer.cs">
+      <DependentUpon>fm_novoProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_outros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_outros.Designer.cs">
+      <DependentUpon>fm_outros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_plano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_plano.Designer.cs">
+      <DependentUpon>fm_plano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_presenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_presenca.Designer.cs">
+      <DependentUpon>fm_presenca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_principal.Designer.cs">
+      <DependentUpon>fm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_login.Designer.cs">
+      <DependentUpon>fm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_paciente.Designer.cs">
+      <DependentUpon>fm_paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_prof.Designer.cs">
+      <DependentUpon>fm_prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_retirada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_retirada.Designer.cs">
+      <DependentUpon>fm_retirada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fm_agenda.resx">
+      <DependentUpon>fm_agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_anual.resx">
+      <DependentUpon>fm_anual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_balanco.resx">
+      <DependentUpon>fm_balanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_editarPac.resx">
+      <DependentUpon>fm_editarPac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_editPac.resx">
+      <DependentUpon>fm_editPac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_caixa.resx">
+      <DependentUpon>fm_caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_conta.resx">
+      <DependentUpon>fm_conta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_diario.resx">
+      <DependentUpon>fm_diario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_editConta.resx">
+      <DependentUpon>fm_editConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_editPlano.resx">
+      <DependentUpon>fm_editPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_editProf.resx">
+      <DependentUpon>fm_editProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_entrada.resx">
+      <DependentUpon>fm_entrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_fechar.resx">
+      <DependentUpon>fm_fechar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_login.resx">
+      <DependentUpon>fm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_mensal.resx">
+      <DependentUpon>fm_mensal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_novaConta.resx">
+      <DependentUpon>fm_novaConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_novoPaciente.resx">
+      <DependentUpon>fm_novoPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_novoPlano.resx">
+      <DependentUpon>fm_novoPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_novoProf.resx">
+      <DependentUpon>fm_novoProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_outros.resx">
+      <DependentUpon>fm_outros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_plano.resx">
+      <DependentUpon>fm_plano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_presenca.resx">
+      <DependentUpon>fm_presenca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_principal.resx">
+      <DependentUpon>fm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_paciente.resx">
+      <DependentUpon>fm_paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_prof.resx">
+      <DependentUpon>fm_prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm_retirada.resx">
+      <DependentUpon>fm_retirada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Pilates.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presenca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_pac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busca_pac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caixa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edita_conta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edita_plano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edita_prof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mensal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nova_conta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novo_plano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novo_prof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outros1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paciente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagar_conta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presenca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retirada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trimestral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
