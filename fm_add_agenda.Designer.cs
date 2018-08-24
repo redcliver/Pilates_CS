@@ -76,6 +76,7 @@
             this.bt_fecha.TabIndex = 22;
             this.bt_fecha.Text = "Fechar";
             this.bt_fecha.UseVisualStyleBackColor = false;
+            this.bt_fecha.Click += new System.EventHandler(this.bt_fecha_Click);
             // 
             // bt_editar
             // 

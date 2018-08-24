@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fm_caixa));
             this.label1 = new System.Windows.Forms.Label();
             this.bt_fecha = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@
             // 
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Pilates_CS.Properties.Resources.fechar;
             this.button1.Location = new System.Drawing.Point(286, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 66);
@@ -76,7 +76,6 @@
             // 
             this.bt_retirada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_retirada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_retirada.Image = global::Pilates_CS.Properties.Resources.retirada;
             this.bt_retirada.Location = new System.Drawing.Point(151, 86);
             this.bt_retirada.Name = "bt_retirada";
             this.bt_retirada.Size = new System.Drawing.Size(129, 66);
@@ -88,7 +87,7 @@
             // 
             this.bt_entrada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_entrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_entrada.Image = global::Pilates_CS.Properties.Resources.entrada;
+            this.bt_entrada.Image = ((System.Drawing.Image)(resources.GetObject("bt_entrada.Image")));
             this.bt_entrada.Location = new System.Drawing.Point(34, 86);
             this.bt_entrada.Name = "bt_entrada";
             this.bt_entrada.Size = new System.Drawing.Size(111, 66);

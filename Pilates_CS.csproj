@@ -66,11 +66,11 @@
     <Compile Include="autenticacao.cs" />
     <Compile Include="biometria.cs" />
     <Compile Include="conexao.cs" />
-    <Compile Include="fm_agenda1.cs">
+    <Compile Include="fm_agenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fm_agenda1.Designer.cs">
-      <DependentUpon>fm_agenda1.cs</DependentUpon>
+    <Compile Include="fm_agenda.Designer.cs">
+      <DependentUpon>fm_agenda.cs</DependentUpon>
     </Compile>
     <Compile Include="fm_anual.cs">
       <SubType>Form</SubType>
@@ -251,8 +251,8 @@
     <EmbeddedResource Include="fm_add_agenda.resx">
       <DependentUpon>fm_add_agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fm_agenda1.resx">
-      <DependentUpon>fm_agenda1.cs</DependentUpon>
+    <EmbeddedResource Include="fm_agenda.resx">
+      <DependentUpon>fm_agenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fm_anual.resx">
       <DependentUpon>fm_anual.cs</DependentUpon>
@@ -473,18 +473,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\digital.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\digital1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\teste.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

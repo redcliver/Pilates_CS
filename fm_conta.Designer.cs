@@ -63,7 +63,6 @@
             // 
             this.bt_edita.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_edita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_edita.Image = global::Pilates_CS.Properties.Resources.edita_conta;
             this.bt_edita.Location = new System.Drawing.Point(151, 86);
             this.bt_edita.Name = "bt_edita";
             this.bt_edita.Size = new System.Drawing.Size(129, 66);
@@ -75,7 +74,6 @@
             // 
             this.bt_novo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_novo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_novo.Image = global::Pilates_CS.Properties.Resources.nova_conta;
             this.bt_novo.Location = new System.Drawing.Point(34, 86);
             this.bt_novo.Name = "bt_novo";
             this.bt_novo.Size = new System.Drawing.Size(111, 66);

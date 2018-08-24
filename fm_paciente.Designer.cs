@@ -51,7 +51,6 @@
             this.bt_busca.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_busca.FlatAppearance.BorderSize = 0;
             this.bt_busca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_busca.Image = global::Pilates_CS.Properties.Resources.busca_pac;
             this.bt_busca.Location = new System.Drawing.Point(140, 86);
             this.bt_busca.Name = "bt_busca";
             this.bt_busca.Size = new System.Drawing.Size(123, 68);
@@ -65,7 +64,6 @@
             this.bt_novoPac.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_novoPac.FlatAppearance.BorderSize = 0;
             this.bt_novoPac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_novoPac.Image = global::Pilates_CS.Properties.Resources.add_pac;
             this.bt_novoPac.Location = new System.Drawing.Point(34, 86);
             this.bt_novoPac.Name = "bt_novoPac";
             this.bt_novoPac.Size = new System.Drawing.Size(100, 68);

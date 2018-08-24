@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pilates_CS
 {
-    public partial class fm_agenda : Form
+    public partial class Fm_agenda : Form
     {
-        public fm_agenda()
+        public Fm_agenda()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace Pilates_CS
         private void bt_fecha_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bt_novo_age_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fm_add_agenda fmaddage = new fm_add_agenda();
+            fmaddage.ShowDialog();
         }
     }
 }

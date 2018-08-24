@@ -38,7 +38,6 @@ namespace Pilates_CS
                     string id_str = (dr["paciente_id"].ToString());
                     int ret = -1;
                     byte[] ImageData = new byte[256 * 288];
-                    int ImageLength = 0;
                     string ImagePath = "C://teste/" + id_str + ".bmp";
                     ret = biometria.PSImgData2BMP(ImageData, ImagePath);
                     if (ret == 0)

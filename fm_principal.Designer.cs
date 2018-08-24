@@ -58,6 +58,7 @@
             // bt_outro
             // 
             this.bt_outro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_outro.Image = ((System.Drawing.Image)(resources.GetObject("bt_outro.Image")));
             this.bt_outro.Location = new System.Drawing.Point(1144, 30);
             this.bt_outro.Name = "bt_outro";
             this.bt_outro.Size = new System.Drawing.Size(75, 75);
@@ -68,6 +69,7 @@
             // bt_paciente
             // 
             this.bt_paciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_paciente.Image = ((System.Drawing.Image)(resources.GetObject("bt_paciente.Image")));
             this.bt_paciente.Location = new System.Drawing.Point(834, 30);
             this.bt_paciente.Name = "bt_paciente";
             this.bt_paciente.Size = new System.Drawing.Size(87, 75);
@@ -78,6 +80,7 @@
             // bt_agenda
             // 
             this.bt_agenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_agenda.Image = ((System.Drawing.Image)(resources.GetObject("bt_agenda.Image")));
             this.bt_agenda.Location = new System.Drawing.Point(940, 30);
             this.bt_agenda.Name = "bt_agenda";
             this.bt_agenda.Size = new System.Drawing.Size(75, 75);
@@ -88,6 +91,7 @@
             // bt_presenca
             // 
             this.bt_presenca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_presenca.Image = ((System.Drawing.Image)(resources.GetObject("bt_presenca.Image")));
             this.bt_presenca.Location = new System.Drawing.Point(1034, 37);
             this.bt_presenca.Name = "bt_presenca";
             this.bt_presenca.Size = new System.Drawing.Size(99, 60);
@@ -99,6 +103,7 @@
             // 
             this.bt_sair.BackColor = System.Drawing.Color.Transparent;
             this.bt_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_sair.Image = ((System.Drawing.Image)(resources.GetObject("bt_sair.Image")));
             this.bt_sair.Location = new System.Drawing.Point(1225, 30);
             this.bt_sair.Name = "bt_sair";
             this.bt_sair.Size = new System.Drawing.Size(75, 75);
@@ -127,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1344, 729);
             this.Controls.Add(this.pn_principal);
             this.Controls.Add(this.panel1);

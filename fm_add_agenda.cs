@@ -15,13 +15,16 @@ namespace Pilates_CS
         public fm_add_agenda()
         {
             InitializeComponent();
-            DateTime hoje = DateTime.Now;
-            tb_teste.Text = hoje.ToString("dddd");
         }
 
         private void fm_add_agenda_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_fecha_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

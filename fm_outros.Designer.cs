@@ -66,7 +66,6 @@
             // 
             this.bt_caixa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_caixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_caixa.Image = global::Pilates_CS.Properties.Resources.caixa;
             this.bt_caixa.Location = new System.Drawing.Point(438, 86);
             this.bt_caixa.Name = "bt_caixa";
             this.bt_caixa.Size = new System.Drawing.Size(73, 66);
@@ -78,7 +77,6 @@
             // 
             this.bt_conta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_conta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_conta.Image = global::Pilates_CS.Properties.Resources.contas;
             this.bt_conta.Location = new System.Drawing.Point(351, 86);
             this.bt_conta.Name = "bt_conta";
             this.bt_conta.Size = new System.Drawing.Size(81, 66);
@@ -90,7 +88,6 @@
             // 
             this.bt_balanco.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_balanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_balanco.Image = global::Pilates_CS.Properties.Resources.balanco;
             this.bt_balanco.Location = new System.Drawing.Point(248, 86);
             this.bt_balanco.Name = "bt_balanco";
             this.bt_balanco.Size = new System.Drawing.Size(97, 66);
@@ -102,7 +99,6 @@
             // 
             this.bt_prof.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_prof.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prof.Image = global::Pilates_CS.Properties.Resources.prof;
             this.bt_prof.Location = new System.Drawing.Point(113, 86);
             this.bt_prof.Name = "bt_prof";
             this.bt_prof.Size = new System.Drawing.Size(129, 66);
@@ -114,7 +110,6 @@
             // 
             this.bt_plano.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_plano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_plano.Image = global::Pilates_CS.Properties.Resources.planos;
             this.bt_plano.Location = new System.Drawing.Point(34, 86);
             this.bt_plano.Name = "bt_plano";
             this.bt_plano.Size = new System.Drawing.Size(73, 66);

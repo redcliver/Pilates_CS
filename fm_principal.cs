@@ -61,7 +61,7 @@ namespace Pilates_CS
         private void bt_agenda_Click(object sender, EventArgs e)
         {
             pn_principal.Controls.Clear();
-            fm_agenda1 fmAgenda = new fm_agenda1();
+            Fm_agenda fmAgenda = new Fm_agenda();
             fmAgenda.TopLevel = false;
             pn_principal.Controls.Add(fmAgenda);
             fmAgenda.FormBorderStyle = FormBorderStyle.None;

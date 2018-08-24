@@ -39,7 +39,6 @@
             // 
             this.bt_mensal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_mensal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_mensal.Image = global::Pilates_CS.Properties.Resources.mensal;
             this.bt_mensal.Location = new System.Drawing.Point(151, 86);
             this.bt_mensal.Name = "bt_mensal";
             this.bt_mensal.Size = new System.Drawing.Size(129, 66);
@@ -51,7 +50,6 @@
             // 
             this.bt_diario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_diario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_diario.Image = global::Pilates_CS.Properties.Resources.diario;
             this.bt_diario.Location = new System.Drawing.Point(34, 86);
             this.bt_diario.Name = "bt_diario";
             this.bt_diario.Size = new System.Drawing.Size(111, 66);
@@ -74,7 +72,6 @@
             // 
             this.bt_anual.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_anual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_anual.Image = global::Pilates_CS.Properties.Resources.anual;
             this.bt_anual.Location = new System.Drawing.Point(286, 86);
             this.bt_anual.Name = "bt_anual";
             this.bt_anual.Size = new System.Drawing.Size(129, 66);

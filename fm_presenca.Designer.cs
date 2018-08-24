@@ -65,7 +65,9 @@
             this.ClientSize = new System.Drawing.Size(1144, 488);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fm_presenca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_presenca";
             this.ResumeLayout(false);
             this.PerformLayout();

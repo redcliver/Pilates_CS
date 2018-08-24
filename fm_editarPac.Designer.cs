@@ -237,7 +237,6 @@
             // 
             this.bt_refresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_refresh.Image = global::Pilates_CS.Properties.Resources.refresh;
             this.bt_refresh.Location = new System.Drawing.Point(488, 287);
             this.bt_refresh.Name = "bt_refresh";
             this.bt_refresh.Size = new System.Drawing.Size(35, 33);
