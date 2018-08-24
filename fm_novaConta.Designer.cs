@@ -30,7 +30,7 @@
         {
             this.bt_fecha = new System.Windows.Forms.Button();
             this.bt_salvar = new System.Windows.Forms.Button();
-            this.tb_cel = new System.Windows.Forms.TextBox();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_nome = new System.Windows.Forms.TextBox();
@@ -65,13 +65,14 @@
             this.bt_salvar.TabIndex = 35;
             this.bt_salvar.Text = "Agendar";
             this.bt_salvar.UseVisualStyleBackColor = false;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
             // 
-            // tb_cel
+            // tb_valor
             // 
-            this.tb_cel.Location = new System.Drawing.Point(286, 160);
-            this.tb_cel.Name = "tb_cel";
-            this.tb_cel.Size = new System.Drawing.Size(84, 20);
-            this.tb_cel.TabIndex = 33;
+            this.tb_valor.Location = new System.Drawing.Point(286, 160);
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(84, 20);
+            this.tb_valor.TabIndex = 33;
             // 
             // label4
             // 
@@ -140,7 +141,7 @@
             this.Controls.Add(this.dp_data);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_salvar);
-            this.Controls.Add(this.tb_cel);
+            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tb_nome);
@@ -159,7 +160,7 @@
 
         private System.Windows.Forms.Button bt_fecha;
         private System.Windows.Forms.Button bt_salvar;
-        private System.Windows.Forms.TextBox tb_cel;
+        private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_nome;

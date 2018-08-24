@@ -30,9 +30,9 @@
         {
             this.bt_fecha = new System.Windows.Forms.Button();
             this.bt_salvar = new System.Windows.Forms.Button();
-            this.tb_cel = new System.Windows.Forms.TextBox();
+            this.tb_desc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -63,14 +63,15 @@
             this.bt_salvar.TabIndex = 35;
             this.bt_salvar.Text = "Registrar";
             this.bt_salvar.UseVisualStyleBackColor = false;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
             // 
-            // tb_cel
+            // tb_desc
             // 
-            this.tb_cel.Location = new System.Drawing.Point(23, 158);
-            this.tb_cel.Multiline = true;
-            this.tb_cel.Name = "tb_cel";
-            this.tb_cel.Size = new System.Drawing.Size(319, 85);
-            this.tb_cel.TabIndex = 33;
+            this.tb_desc.Location = new System.Drawing.Point(23, 158);
+            this.tb_desc.Multiline = true;
+            this.tb_desc.Name = "tb_desc";
+            this.tb_desc.Size = new System.Drawing.Size(319, 85);
+            this.tb_desc.TabIndex = 33;
             // 
             // label4
             // 
@@ -83,12 +84,12 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Descrição";
             // 
-            // tb_nome
+            // tb_valor
             // 
-            this.tb_nome.Location = new System.Drawing.Point(23, 96);
-            this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(108, 20);
-            this.tb_nome.TabIndex = 30;
+            this.tb_valor.Location = new System.Drawing.Point(23, 96);
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(108, 20);
+            this.tb_valor.TabIndex = 30;
             // 
             // label2
             // 
@@ -120,9 +121,9 @@
             this.ClientSize = new System.Drawing.Size(484, 338);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_salvar);
-            this.Controls.Add(this.tb_cel);
+            this.Controls.Add(this.tb_desc);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tb_nome);
+            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -140,9 +141,9 @@
 
         private System.Windows.Forms.Button bt_fecha;
         private System.Windows.Forms.Button bt_salvar;
-        private System.Windows.Forms.TextBox tb_cel;
+        private System.Windows.Forms.TextBox tb_desc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

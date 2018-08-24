@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_cel = new System.Windows.Forms.TextBox();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_nome = new System.Windows.Forms.TextBox();
@@ -37,6 +37,8 @@
             this.cb_periodo = new System.Windows.Forms.ComboBox();
             this.bt_fecha = new System.Windows.Forms.Button();
             this.bt_salvar = new System.Windows.Forms.Button();
+            this.cb_nPessoas = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -50,12 +52,13 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Novo Plano";
             // 
-            // tb_cel
+            // tb_valor
             // 
-            this.tb_cel.Location = new System.Drawing.Point(174, 159);
-            this.tb_cel.Name = "tb_cel";
-            this.tb_cel.Size = new System.Drawing.Size(84, 20);
-            this.tb_cel.TabIndex = 24;
+            this.tb_valor.Location = new System.Drawing.Point(174, 159);
+            this.tb_valor.MaxLength = 6;
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(84, 20);
+            this.tb_valor.TabIndex = 24;
             // 
             // label4
             // 
@@ -131,6 +134,26 @@
             this.bt_salvar.TabIndex = 26;
             this.bt_salvar.Text = "Salvar";
             this.bt_salvar.UseVisualStyleBackColor = false;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
+            // 
+            // cb_nPessoas
+            // 
+            this.cb_nPessoas.FormattingEnabled = true;
+            this.cb_nPessoas.Location = new System.Drawing.Point(311, 159);
+            this.cb_nPessoas.Name = "cb_nPessoas";
+            this.cb_nPessoas.Size = new System.Drawing.Size(121, 21);
+            this.cb_nPessoas.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(306, 130);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 26);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Nº Pessoas";
             // 
             // fm_novoPlano
             // 
@@ -138,10 +161,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(484, 269);
+            this.Controls.Add(this.cb_nPessoas);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.cb_periodo);
-            this.Controls.Add(this.tb_cel);
+            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tb_nome);
@@ -153,6 +178,7 @@
             this.Name = "fm_novoPlano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_novoPlano";
+            this.Load += new System.EventHandler(this.fm_novoPlano_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +187,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_cel;
+        private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_nome;
@@ -169,5 +195,7 @@
         private System.Windows.Forms.ComboBox cb_periodo;
         private System.Windows.Forms.Button bt_fecha;
         private System.Windows.Forms.Button bt_salvar;
+        private System.Windows.Forms.ComboBox cb_nPessoas;
+        private System.Windows.Forms.Label label5;
     }
 }

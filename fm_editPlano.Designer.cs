@@ -61,6 +61,7 @@
             this.bt_editar.TabIndex = 22;
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = false;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // label2
             // 
@@ -109,6 +110,7 @@
             this.Name = "fm_editPlano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_editPlano";
+            this.Load += new System.EventHandler(this.fm_editPlano_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

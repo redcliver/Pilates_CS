@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(507, 238);
+            this.ClientSize = new System.Drawing.Size(491, 199);
             this.Controls.Add(this.cb_paciente);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_editar);

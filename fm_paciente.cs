@@ -35,5 +35,10 @@ namespace Pilates_CS
         {
             this.Close();
         }
+
+        private void fm_paciente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

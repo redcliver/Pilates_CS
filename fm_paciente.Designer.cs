@@ -100,6 +100,7 @@
             this.Name = "fm_paciente";
             this.Opacity = 0.1D;
             this.Text = "paciente";
+            this.Load += new System.EventHandler(this.fm_paciente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

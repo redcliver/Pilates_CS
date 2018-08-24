@@ -30,7 +30,7 @@
         {
             this.bt_fecha = new System.Windows.Forms.Button();
             this.bt_salvar = new System.Windows.Forms.Button();
-            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_saldo = new System.Windows.Forms.Label();
@@ -64,13 +64,14 @@
             this.bt_salvar.TabIndex = 49;
             this.bt_salvar.Text = "Fechar";
             this.bt_salvar.UseVisualStyleBackColor = false;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
             // 
-            // tb_nome
+            // tb_valor
             // 
-            this.tb_nome.Location = new System.Drawing.Point(22, 163);
-            this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(108, 20);
-            this.tb_nome.TabIndex = 46;
+            this.tb_valor.Location = new System.Drawing.Point(22, 163);
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(108, 20);
+            this.tb_valor.TabIndex = 46;
             // 
             // label2
             // 
@@ -138,13 +139,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_salvar);
-            this.Controls.Add(this.tb_nome);
+            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fm_fechar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_fechar";
+            this.Load += new System.EventHandler(this.fm_fechar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,7 +156,7 @@
 
         private System.Windows.Forms.Button bt_fecha;
         private System.Windows.Forms.Button bt_salvar;
-        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_saldo;

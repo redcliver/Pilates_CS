@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cb_plano = new System.Windows.Forms.ComboBox();
+            this.cb_prof = new System.Windows.Forms.ComboBox();
             this.bt_fecha = new System.Windows.Forms.Button();
             this.bt_editar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cb_plano
+            // cb_prof
             // 
-            this.cb_plano.FormattingEnabled = true;
-            this.cb_plano.Location = new System.Drawing.Point(26, 104);
-            this.cb_plano.Name = "cb_plano";
-            this.cb_plano.Size = new System.Drawing.Size(448, 21);
-            this.cb_plano.TabIndex = 29;
+            this.cb_prof.FormattingEnabled = true;
+            this.cb_prof.Location = new System.Drawing.Point(26, 104);
+            this.cb_prof.Name = "cb_prof";
+            this.cb_prof.Size = new System.Drawing.Size(448, 21);
+            this.cb_prof.TabIndex = 29;
             // 
             // bt_fecha
             // 
@@ -69,6 +69,7 @@
             this.bt_editar.TabIndex = 27;
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = false;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // label2
             // 
@@ -98,7 +99,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(491, 199);
-            this.Controls.Add(this.cb_plano);
+            this.Controls.Add(this.cb_prof);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.label2);
@@ -109,6 +110,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_editProf";
+            this.Load += new System.EventHandler(this.fm_editProf_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cb_plano;
+        private System.Windows.Forms.ComboBox cb_prof;
         private System.Windows.Forms.Button bt_fecha;
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.Label label2;

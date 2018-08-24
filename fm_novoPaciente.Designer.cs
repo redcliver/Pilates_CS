@@ -101,6 +101,7 @@
             // tb_tel
             // 
             this.tb_tel.Location = new System.Drawing.Point(36, 171);
+            this.tb_tel.MaxLength = 11;
             this.tb_tel.Name = "tb_tel";
             this.tb_tel.Size = new System.Drawing.Size(124, 20);
             this.tb_tel.TabIndex = 5;
@@ -108,6 +109,7 @@
             // tb_cel
             // 
             this.tb_cel.Location = new System.Drawing.Point(188, 171);
+            this.tb_cel.MaxLength = 11;
             this.tb_cel.Name = "tb_cel";
             this.tb_cel.Size = new System.Drawing.Size(124, 20);
             this.tb_cel.TabIndex = 6;
@@ -155,6 +157,7 @@
             // tb_queixa
             // 
             this.tb_queixa.Location = new System.Drawing.Point(36, 316);
+            this.tb_queixa.MaxLength = 300;
             this.tb_queixa.Multiline = true;
             this.tb_queixa.Name = "tb_queixa";
             this.tb_queixa.Size = new System.Drawing.Size(222, 89);
@@ -163,6 +166,7 @@
             // tb_objetivo
             // 
             this.tb_objetivo.Location = new System.Drawing.Point(273, 316);
+            this.tb_objetivo.MaxLength = 300;
             this.tb_objetivo.Multiline = true;
             this.tb_objetivo.Name = "tb_objetivo";
             this.tb_objetivo.Size = new System.Drawing.Size(231, 89);

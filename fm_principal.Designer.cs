@@ -58,7 +58,6 @@
             // bt_outro
             // 
             this.bt_outro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_outro.Image = global::Pilates_CS.Properties.Resources.outros;
             this.bt_outro.Location = new System.Drawing.Point(1144, 30);
             this.bt_outro.Name = "bt_outro";
             this.bt_outro.Size = new System.Drawing.Size(75, 75);
@@ -69,7 +68,6 @@
             // bt_paciente
             // 
             this.bt_paciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_paciente.Image = global::Pilates_CS.Properties.Resources.paciente;
             this.bt_paciente.Location = new System.Drawing.Point(834, 30);
             this.bt_paciente.Name = "bt_paciente";
             this.bt_paciente.Size = new System.Drawing.Size(87, 75);
@@ -80,7 +78,6 @@
             // bt_agenda
             // 
             this.bt_agenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_agenda.Image = global::Pilates_CS.Properties.Resources.agenda;
             this.bt_agenda.Location = new System.Drawing.Point(940, 30);
             this.bt_agenda.Name = "bt_agenda";
             this.bt_agenda.Size = new System.Drawing.Size(75, 75);
@@ -91,7 +88,6 @@
             // bt_presenca
             // 
             this.bt_presenca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_presenca.Image = global::Pilates_CS.Properties.Resources.presenca;
             this.bt_presenca.Location = new System.Drawing.Point(1034, 37);
             this.bt_presenca.Name = "bt_presenca";
             this.bt_presenca.Size = new System.Drawing.Size(99, 60);
@@ -103,7 +99,6 @@
             // 
             this.bt_sair.BackColor = System.Drawing.Color.Transparent;
             this.bt_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_sair.Image = global::Pilates_CS.Properties.Resources.sair;
             this.bt_sair.Location = new System.Drawing.Point(1225, 30);
             this.bt_sair.Name = "bt_sair";
             this.bt_sair.Size = new System.Drawing.Size(75, 75);
@@ -132,7 +127,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Pilates_CS.Properties.Resources.Untitled_1;
             this.ClientSize = new System.Drawing.Size(1344, 729);
             this.Controls.Add(this.pn_principal);
             this.Controls.Add(this.panel1);

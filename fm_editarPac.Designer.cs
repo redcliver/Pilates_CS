@@ -43,6 +43,10 @@
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lb_id = new System.Windows.Forms.Label();
+            this.bt_img = new System.Windows.Forms.Button();
+            this.bt_refresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt_fecha
@@ -51,7 +55,7 @@
             this.bt_fecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_fecha.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_fecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.bt_fecha.Location = new System.Drawing.Point(47, 444);
+            this.bt_fecha.Location = new System.Drawing.Point(34, 467);
             this.bt_fecha.Name = "bt_fecha";
             this.bt_fecha.Size = new System.Drawing.Size(105, 37);
             this.bt_fecha.TabIndex = 29;
@@ -65,7 +69,7 @@
             this.bt_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_salvar.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_salvar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.bt_salvar.Location = new System.Drawing.Point(410, 444);
+            this.bt_salvar.Location = new System.Drawing.Point(397, 467);
             this.bt_salvar.Name = "bt_salvar";
             this.bt_salvar.Size = new System.Drawing.Size(105, 37);
             this.bt_salvar.TabIndex = 28;
@@ -75,7 +79,8 @@
             // 
             // tb_objetivo
             // 
-            this.tb_objetivo.Location = new System.Drawing.Point(284, 321);
+            this.tb_objetivo.Location = new System.Drawing.Point(271, 344);
+            this.tb_objetivo.MaxLength = 300;
             this.tb_objetivo.Multiline = true;
             this.tb_objetivo.Name = "tb_objetivo";
             this.tb_objetivo.Size = new System.Drawing.Size(231, 89);
@@ -83,7 +88,8 @@
             // 
             // tb_queixa
             // 
-            this.tb_queixa.Location = new System.Drawing.Point(47, 321);
+            this.tb_queixa.Location = new System.Drawing.Point(34, 344);
+            this.tb_queixa.MaxLength = 300;
             this.tb_queixa.Multiline = true;
             this.tb_queixa.Name = "tb_queixa";
             this.tb_queixa.Size = new System.Drawing.Size(222, 89);
@@ -94,7 +100,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(279, 292);
+            this.label7.Location = new System.Drawing.Point(266, 315);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 26);
             this.label7.TabIndex = 25;
@@ -105,7 +111,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(42, 292);
+            this.label6.Location = new System.Drawing.Point(29, 315);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 26);
             this.label6.TabIndex = 24;
@@ -113,7 +119,7 @@
             // 
             // dp_data_nasc
             // 
-            this.dp_data_nasc.Location = new System.Drawing.Point(47, 247);
+            this.dp_data_nasc.Location = new System.Drawing.Point(34, 270);
             this.dp_data_nasc.Name = "dp_data_nasc";
             this.dp_data_nasc.Size = new System.Drawing.Size(240, 20);
             this.dp_data_nasc.TabIndex = 23;
@@ -123,7 +129,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(42, 218);
+            this.label5.Location = new System.Drawing.Point(29, 241);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 26);
             this.label5.TabIndex = 22;
@@ -131,14 +137,16 @@
             // 
             // tb_cel
             // 
-            this.tb_cel.Location = new System.Drawing.Point(199, 176);
+            this.tb_cel.Location = new System.Drawing.Point(186, 199);
+            this.tb_cel.MaxLength = 11;
             this.tb_cel.Name = "tb_cel";
             this.tb_cel.Size = new System.Drawing.Size(124, 20);
             this.tb_cel.TabIndex = 21;
             // 
             // tb_tel
             // 
-            this.tb_tel.Location = new System.Drawing.Point(47, 176);
+            this.tb_tel.Location = new System.Drawing.Point(34, 199);
+            this.tb_tel.MaxLength = 11;
             this.tb_tel.Name = "tb_tel";
             this.tb_tel.Size = new System.Drawing.Size(124, 20);
             this.tb_tel.TabIndex = 20;
@@ -148,7 +156,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(194, 147);
+            this.label4.Location = new System.Drawing.Point(181, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 26);
             this.label4.TabIndex = 19;
@@ -159,7 +167,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(42, 147);
+            this.label3.Location = new System.Drawing.Point(29, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 26);
             this.label3.TabIndex = 18;
@@ -167,7 +175,7 @@
             // 
             // tb_nome
             // 
-            this.tb_nome.Location = new System.Drawing.Point(47, 112);
+            this.tb_nome.Location = new System.Drawing.Point(34, 135);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(448, 20);
             this.tb_nome.TabIndex = 17;
@@ -177,7 +185,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(42, 83);
+            this.label2.Location = new System.Drawing.Point(29, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 26);
             this.label2.TabIndex = 16;
@@ -194,12 +202,59 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Editar Paciente";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(29, 76);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 26);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "ID:";
+            // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lb_id.Location = new System.Drawing.Point(58, 76);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(29, 26);
+            this.lb_id.TabIndex = 31;
+            this.lb_id.Text = "ID";
+            // 
+            // bt_img
+            // 
+            this.bt_img.Location = new System.Drawing.Point(332, 170);
+            this.bt_img.Name = "bt_img";
+            this.bt_img.Size = new System.Drawing.Size(150, 150);
+            this.bt_img.TabIndex = 32;
+            this.bt_img.UseVisualStyleBackColor = true;
+            this.bt_img.Click += new System.EventHandler(this.bt_img_Click);
+            // 
+            // bt_refresh
+            // 
+            this.bt_refresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.bt_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_refresh.Image = global::Pilates_CS.Properties.Resources.refresh;
+            this.bt_refresh.Location = new System.Drawing.Point(488, 287);
+            this.bt_refresh.Name = "bt_refresh";
+            this.bt_refresh.Size = new System.Drawing.Size(35, 33);
+            this.bt_refresh.TabIndex = 33;
+            this.bt_refresh.UseVisualStyleBackColor = true;
+            this.bt_refresh.Click += new System.EventHandler(this.button1_Click);
+            // 
             // fm_editarPac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(539, 495);
+            this.ClientSize = new System.Drawing.Size(539, 530);
+            this.Controls.Add(this.bt_refresh);
+            this.Controls.Add(this.bt_img);
+            this.Controls.Add(this.lb_id);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.tb_objetivo);
@@ -244,5 +299,9 @@
         private System.Windows.Forms.TextBox tb_nome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_id;
+        private System.Windows.Forms.Button bt_img;
+        private System.Windows.Forms.Button bt_refresh;
     }
 }
