@@ -28,5 +28,12 @@ namespace Pilates_CS
             fm_add_agenda fmaddage = new fm_add_agenda();
             fmaddage.ShowDialog();
         }
+
+        private void bt_visualizar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fm_visualizar fmvisu = new fm_visualizar();
+            fmvisu.ShowDialog();
+        }
     }
 }

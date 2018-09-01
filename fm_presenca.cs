@@ -21,5 +21,12 @@ namespace Pilates_CS
         {
             this.Close();
         }
+
+        private void bt_manual_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fm_manual fmManu = new fm_manual();
+            fmManu.ShowDialog();
+        }
     }
 }

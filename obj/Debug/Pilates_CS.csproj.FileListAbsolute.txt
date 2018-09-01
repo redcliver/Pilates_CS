@@ -144,3 +144,6 @@ C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_editarProf.reso
 C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_editarConta.resources
 C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_MsgCadBiometria.resources
 C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_add_agenda.resources
+C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_visualizar.resources
+C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_manual.resources
+C:\Users\HeadTec\source\repos\Pilates_CS\obj\Debug\Pilates_CS.fm_pagamento.resources

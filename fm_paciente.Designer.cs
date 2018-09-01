@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fm_paciente));
             this.label1 = new System.Windows.Forms.Label();
             this.bt_busca = new System.Windows.Forms.Button();
             this.bt_novoPac = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.bt_busca.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_busca.FlatAppearance.BorderSize = 0;
             this.bt_busca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_busca.Image = ((System.Drawing.Image)(resources.GetObject("bt_busca.Image")));
             this.bt_busca.Location = new System.Drawing.Point(140, 86);
             this.bt_busca.Name = "bt_busca";
             this.bt_busca.Size = new System.Drawing.Size(123, 68);
@@ -64,6 +66,7 @@
             this.bt_novoPac.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_novoPac.FlatAppearance.BorderSize = 0;
             this.bt_novoPac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_novoPac.Image = ((System.Drawing.Image)(resources.GetObject("bt_novoPac.Image")));
             this.bt_novoPac.Location = new System.Drawing.Point(34, 86);
             this.bt_novoPac.Name = "bt_novoPac";
             this.bt_novoPac.Size = new System.Drawing.Size(100, 68);
@@ -77,7 +80,7 @@
             this.bt_fecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_fecha.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_fecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.bt_fecha.Location = new System.Drawing.Point(1004, 425);
+            this.bt_fecha.Location = new System.Drawing.Point(1007, 335);
             this.bt_fecha.Name = "bt_fecha";
             this.bt_fecha.Size = new System.Drawing.Size(105, 37);
             this.bt_fecha.TabIndex = 15;
@@ -90,11 +93,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1144, 488);
+            this.ClientSize = new System.Drawing.Size(1144, 400);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_busca);
             this.Controls.Add(this.bt_novoPac);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fm_paciente";
             this.Opacity = 0.1D;
             this.Text = "paciente";

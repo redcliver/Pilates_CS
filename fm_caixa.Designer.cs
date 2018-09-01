@@ -65,6 +65,7 @@
             // 
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(286, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 66);
@@ -76,6 +77,7 @@
             // 
             this.bt_retirada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_retirada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_retirada.Image = ((System.Drawing.Image)(resources.GetObject("bt_retirada.Image")));
             this.bt_retirada.Location = new System.Drawing.Point(151, 86);
             this.bt_retirada.Name = "bt_retirada";
             this.bt_retirada.Size = new System.Drawing.Size(129, 66);

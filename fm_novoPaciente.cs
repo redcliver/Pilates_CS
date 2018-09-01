@@ -45,7 +45,7 @@ namespace Pilates_CS
             string que = tb_queixa.Text;
             string obj = tb_objetivo.Text;
             string connString = "Server = 127.0.0.1; Port = 5432; Database = pilates; Uid=postgres; Pwd=igor3355;";
-            string query = "INSERT INTO paciente (nome, telefone, celular, data_nasc, data_cadastro, queixa, objetivo) VALUES (@n, @t, @c, @d, @dc, @q, @o)";
+            string query = "INSERT INTO paciente (nome, telefone, celular, data_nasc, data_cadastro, queixa, objetivo, aulas) VALUES (@n, @t, @c, @d, @dc, @q, @o, @au)";
             NpgsqlConnection conn = new NpgsqlConnection(connString);
             conn.Open();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -58,6 +58,7 @@ namespace Pilates_CS
             cmd.Parameters.AddWithValue("dc", agora);
             cmd.Parameters.AddWithValue("q", que);
             cmd.Parameters.AddWithValue("o", obj);
+            cmd.Parameters.AddWithValue("au", 0);
             cmd.ExecuteNonQuery();
             conn.Close();
             this.Close();

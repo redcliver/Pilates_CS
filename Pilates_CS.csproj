@@ -57,6 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agenda.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>agenda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="fm_add_agenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +172,12 @@
     <Compile Include="fm_fechar.Designer.cs">
       <DependentUpon>fm_fechar.cs</DependentUpon>
     </Compile>
+    <Compile Include="fm_manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_manual.Designer.cs">
+      <DependentUpon>fm_manual.cs</DependentUpon>
+    </Compile>
     <Compile Include="fm_mensal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +220,12 @@
     <Compile Include="fm_outros.Designer.cs">
       <DependentUpon>fm_outros.cs</DependentUpon>
     </Compile>
+    <Compile Include="fm_pagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_pagamento.Designer.cs">
+      <DependentUpon>fm_pagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="fm_plano.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +267,12 @@
     </Compile>
     <Compile Include="fm_retirada.Designer.cs">
       <DependentUpon>fm_retirada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm_visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_visualizar.Designer.cs">
+      <DependentUpon>fm_visualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -302,6 +330,9 @@
     <EmbeddedResource Include="fm_login.resx">
       <DependentUpon>fm_login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fm_manual.resx">
+      <DependentUpon>fm_manual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fm_mensal.resx">
       <DependentUpon>fm_mensal.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +354,9 @@
     <EmbeddedResource Include="fm_outros.resx">
       <DependentUpon>fm_outros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fm_pagamento.resx">
+      <DependentUpon>fm_pagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fm_plano.resx">
       <DependentUpon>fm_plano.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,10 +375,35 @@
     <EmbeddedResource Include="fm_retirada.resx">
       <DependentUpon>fm_retirada.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fm_visualizar.resx">
+      <DependentUpon>fm_visualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="agenda.xsc">
+      <DependentUpon>agenda.xsd</DependentUpon>
+    </None>
+    <None Include="agenda.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>agenda.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="agenda.xss">
+      <DependentUpon>agenda.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

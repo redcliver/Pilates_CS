@@ -56,5 +56,12 @@ namespace Pilates_CS
             fm_caixa fmCaixa = new fm_caixa();
             fmCaixa.ShowDialog();
         }
+
+        private void bt_pagamento_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            fm_pagamento fmPag = new fm_pagamento();
+            fmPag.ShowDialog();
+        }
     }
 }
