@@ -31,12 +31,14 @@ namespace Pilates_CS
 
         private void bt_login_Click(object sender, EventArgs e)
         {
+            
+            string connString = "Server = 127.0.0.1; Port = 5432; Database = pilates; Uid=postgres; Pwd=igor3355;";
             string query = "SELECT * FROM usuario WHERE usuario=@usuario AND senha=@senha";
-            conexao conexao = new conexao();
-            conexao.conectar();
-
-            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.con);
-
+            NpgsqlConnection conn = new NpgsqlConnection(connString);
+            conn.Open();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = query;
             cmd.Parameters.AddWithValue("@usuario", tb_usuario.Text);
             cmd.Parameters.AddWithValue("@senha", tb_senha.Text);
 
@@ -51,12 +53,13 @@ namespace Pilates_CS
             {
                 MessageBox.Show("Ops! Usuário / Senha incorreto!", "Erro no login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            conexao.desconectar();
+            conn.Close();
         }
 
         private void fm_login_Load(object sender, EventArgs e)
         {
             tb_usuario.Select();
+            this.AcceptButton = bt_login;
         }
     }
 }

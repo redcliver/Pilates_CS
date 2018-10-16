@@ -67,5 +67,15 @@ namespace Pilates_CS
             fmAgenda.FormBorderStyle = FormBorderStyle.None;
             fmAgenda.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_principal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace Pilates_CS
             string query = "SELECT * FROM conta WHERE conta_id=@idCont";
             conexao conexao = new conexao();
             conexao.conectar();
-            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.con);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.conn);
             cmd.Parameters.AddWithValue("@idCont", contId);
             NpgsqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
@@ -53,7 +53,7 @@ namespace Pilates_CS
             conexao conexao = new conexao();
             conexao.conectar();
             NpgsqlCommand cmd = new NpgsqlCommand();
-            cmd.Connection = conexao.con;
+            cmd.Connection = conexao.conn;
             cmd.CommandText = query;
             cmd.Parameters.AddWithValue("idCont", conid);
             cmd.Parameters.AddWithValue("n", nome);
@@ -62,6 +62,11 @@ namespace Pilates_CS
             cmd.ExecuteNonQuery();
             conexao.desconectar();
             this.Close();
+        }
+
+        private void fm_editarConta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

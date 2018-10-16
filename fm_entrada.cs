@@ -26,13 +26,16 @@ namespace Pilates_CS
         private void bt_salvar_Click(object sender, EventArgs e)
         {
             string desc = tb_desc.Text;
-            string tip = "entrada";
+            string tip = "Entrada";
             string total_str;
+            bool din = rb_dinheiro.Checked;
+            bool cre = rb_credito.Checked;
+            bool deb = rb_debito.Checked;
             decimal valor = Convert.ToDecimal(tb_valor.Text);
             DateTime agora = DateTime.Now;
             decimal last_caixa;
             string connString = "Server = 127.0.0.1; Port = 5432; Database = pilates; Uid=postgres; Pwd=igor3355;";
-            string query = "INSERT INTO caixa_geral (tipo, descricao, total, valor, data) VALUES (@ti, @de, @to, @va, @da)";
+            string query = "INSERT INTO caixa_geral (tipo, descricao, total, valor, data, metodo) VALUES (@ti, @de, @to, @va, @da, @me)";
             string ultimo = "SELECT * FROM caixa_geral ORDER BY caixa_id DESC LIMIT 1";
             NpgsqlConnection conn = new NpgsqlConnection(connString);
             conn.Open();
@@ -47,11 +50,22 @@ namespace Pilates_CS
             last_caixa = last_caixa + valor;
             cmd.Connection = conn;
             cmd.CommandText = query;
-            cmd.Parameters.AddWithValue("ti", tip);
-            cmd.Parameters.AddWithValue("de", desc);
-            cmd.Parameters.AddWithValue("to", last_caixa);
-            cmd.Parameters.AddWithValue("va", valor);
-            cmd.Parameters.AddWithValue("da", agora);
+            if (din) {
+                cmd.Parameters.AddWithValue("@me", "Dinheiro");
+            }
+            if (cre)
+            {
+                cmd.Parameters.AddWithValue("@me", "Credito");
+            }
+            if (deb)
+            {
+                cmd.Parameters.AddWithValue("@me", "Debito");
+            }
+            cmd.Parameters.AddWithValue("@ti", tip);
+            cmd.Parameters.AddWithValue("@de", desc);
+            cmd.Parameters.AddWithValue("@to", last_caixa);
+            cmd.Parameters.AddWithValue("@va", valor);
+            cmd.Parameters.AddWithValue("@da", agora);
             cmd.ExecuteNonQuery();
             conn.Close();
             this.Close();

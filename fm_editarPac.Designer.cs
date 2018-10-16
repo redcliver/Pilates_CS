@@ -47,6 +47,8 @@
             this.lb_id = new System.Windows.Forms.Label();
             this.bt_img = new System.Windows.Forms.Button();
             this.bt_refresh = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lb_nAulas = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt_fecha
@@ -119,7 +121,7 @@
             // 
             // dp_data_nasc
             // 
-            this.dp_data_nasc.Location = new System.Drawing.Point(34, 270);
+            this.dp_data_nasc.Location = new System.Drawing.Point(34, 252);
             this.dp_data_nasc.Name = "dp_data_nasc";
             this.dp_data_nasc.Size = new System.Drawing.Size(240, 20);
             this.dp_data_nasc.TabIndex = 23;
@@ -129,7 +131,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(29, 241);
+            this.label5.Location = new System.Drawing.Point(29, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 26);
             this.label5.TabIndex = 22;
@@ -137,7 +139,7 @@
             // 
             // tb_cel
             // 
-            this.tb_cel.Location = new System.Drawing.Point(186, 199);
+            this.tb_cel.Location = new System.Drawing.Point(185, 195);
             this.tb_cel.MaxLength = 11;
             this.tb_cel.Name = "tb_cel";
             this.tb_cel.Size = new System.Drawing.Size(124, 20);
@@ -145,7 +147,7 @@
             // 
             // tb_tel
             // 
-            this.tb_tel.Location = new System.Drawing.Point(34, 199);
+            this.tb_tel.Location = new System.Drawing.Point(33, 195);
             this.tb_tel.MaxLength = 11;
             this.tb_tel.Name = "tb_tel";
             this.tb_tel.Size = new System.Drawing.Size(124, 20);
@@ -156,7 +158,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(181, 170);
+            this.label4.Location = new System.Drawing.Point(180, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 26);
             this.label4.TabIndex = 19;
@@ -167,7 +169,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(29, 170);
+            this.label3.Location = new System.Drawing.Point(28, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 26);
             this.label3.TabIndex = 18;
@@ -244,12 +246,36 @@
             this.bt_refresh.UseVisualStyleBackColor = true;
             this.bt_refresh.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(29, 283);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 26);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Aulas:";
+            // 
+            // lb_nAulas
+            // 
+            this.lb_nAulas.AutoSize = true;
+            this.lb_nAulas.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nAulas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lb_nAulas.Location = new System.Drawing.Point(83, 283);
+            this.lb_nAulas.Name = "lb_nAulas";
+            this.lb_nAulas.Size = new System.Drawing.Size(62, 26);
+            this.lb_nAulas.TabIndex = 35;
+            this.lb_nAulas.Text = "nAulas";
+            // 
             // fm_editarPac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(539, 530);
+            this.Controls.Add(this.lb_nAulas);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.bt_refresh);
             this.Controls.Add(this.bt_img);
             this.Controls.Add(this.lb_id);
@@ -302,5 +328,7 @@
         private System.Windows.Forms.Label lb_id;
         private System.Windows.Forms.Button bt_img;
         private System.Windows.Forms.Button bt_refresh;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lb_nAulas;
     }
 }

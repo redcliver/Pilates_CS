@@ -25,7 +25,7 @@ namespace Pilates_CS
         private void bt_diario_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fm_diario fmDia = new fm_diario();
+            fm_repost fmDia = new fm_repost();
             fmDia.ShowDialog();
         }
 

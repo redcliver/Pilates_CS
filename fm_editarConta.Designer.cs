@@ -179,6 +179,7 @@
             this.Name = "fm_editarConta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_editarConta";
+            this.Load += new System.EventHandler(this.fm_editarConta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

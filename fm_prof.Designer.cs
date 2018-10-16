@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fm_prof));
             this.bt_edita = new System.Windows.Forms.Button();
             this.bt_novo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             // 
             this.bt_edita.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_edita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_edita.Image = ((System.Drawing.Image)(resources.GetObject("bt_edita.Image")));
             this.bt_edita.Location = new System.Drawing.Point(151, 86);
             this.bt_edita.Name = "bt_edita";
             this.bt_edita.Size = new System.Drawing.Size(129, 66);
@@ -49,6 +51,7 @@
             // 
             this.bt_novo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_novo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_novo.Image = ((System.Drawing.Image)(resources.GetObject("bt_novo.Image")));
             this.bt_novo.Location = new System.Drawing.Point(34, 86);
             this.bt_novo.Name = "bt_novo";
             this.bt_novo.Size = new System.Drawing.Size(111, 66);

@@ -113,12 +113,14 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImageLocation = "C:\\Users\\HeadTec\\source\\repos\\Pilates_CS\\Logo.png";
             this.pictureBox1.Location = new System.Drawing.Point(10, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(187, 78);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pn_principal
             // 
@@ -127,6 +129,7 @@
             this.pn_principal.Name = "pn_principal";
             this.pn_principal.Size = new System.Drawing.Size(1160, 527);
             this.pn_principal.TabIndex = 2;
+            this.pn_principal.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_principal_Paint);
             // 
             // fm_principal
             // 

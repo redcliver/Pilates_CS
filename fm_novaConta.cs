@@ -30,7 +30,7 @@ namespace Pilates_CS
             DateTime data = dp_data.Value;
             DateTime agora = DateTime.Now;
             string connString = "Server = 127.0.0.1; Port = 5432; Database = pilates; Uid=postgres; Pwd=igor3355;";
-            string query = "INSERT INTO conta (nome, data_venc, data_cadastro, valor) VALUES (@n, @dv, @dc, @v)";
+            string query = "INSERT INTO conta (nome, data_venc, data_cadastro, valor, estado) VALUES (@n, @dv, @dc, @v, @est)";
             NpgsqlConnection conn = new NpgsqlConnection(connString);
             conn.Open();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -40,6 +40,7 @@ namespace Pilates_CS
             cmd.Parameters.AddWithValue("dv", data);
             cmd.Parameters.AddWithValue("dc", agora);
             cmd.Parameters.AddWithValue("v", valor);
+            cmd.Parameters.AddWithValue("est", "aberto");
             cmd.ExecuteNonQuery();
             conn.Close();
             this.Close();

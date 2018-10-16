@@ -26,7 +26,7 @@ namespace Pilates_CS
         private void bt_salvar_Click(object sender, EventArgs e)
         {
             string desc = tb_desc.Text;
-            string tip = "saida";
+            string tip = "Saida";
             string total_str;
             decimal valor = Convert.ToDecimal(tb_valor.Text);
             DateTime agora = DateTime.Now;

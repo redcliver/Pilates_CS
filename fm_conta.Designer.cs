@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fm_conta));
             this.bt_fecha = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_edita = new System.Windows.Forms.Button();
             this.bt_novo = new System.Windows.Forms.Button();
+            this.bt_pagar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt_fecha
@@ -63,6 +65,7 @@
             // 
             this.bt_edita.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_edita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_edita.Image = ((System.Drawing.Image)(resources.GetObject("bt_edita.Image")));
             this.bt_edita.Location = new System.Drawing.Point(151, 86);
             this.bt_edita.Name = "bt_edita";
             this.bt_edita.Size = new System.Drawing.Size(129, 66);
@@ -74,6 +77,7 @@
             // 
             this.bt_novo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.bt_novo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_novo.Image = ((System.Drawing.Image)(resources.GetObject("bt_novo.Image")));
             this.bt_novo.Location = new System.Drawing.Point(34, 86);
             this.bt_novo.Name = "bt_novo";
             this.bt_novo.Size = new System.Drawing.Size(111, 66);
@@ -81,12 +85,25 @@
             this.bt_novo.UseVisualStyleBackColor = true;
             this.bt_novo.Click += new System.EventHandler(this.bt_novo_Click);
             // 
+            // bt_pagar
+            // 
+            this.bt_pagar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.bt_pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_pagar.Image = ((System.Drawing.Image)(resources.GetObject("bt_pagar.Image")));
+            this.bt_pagar.Location = new System.Drawing.Point(286, 86);
+            this.bt_pagar.Name = "bt_pagar";
+            this.bt_pagar.Size = new System.Drawing.Size(129, 66);
+            this.bt_pagar.TabIndex = 23;
+            this.bt_pagar.UseVisualStyleBackColor = true;
+            this.bt_pagar.Click += new System.EventHandler(this.bt_pagar_Click);
+            // 
             // fm_conta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1144, 400);
+            this.Controls.Add(this.bt_pagar);
             this.Controls.Add(this.bt_edita);
             this.Controls.Add(this.bt_novo);
             this.Controls.Add(this.label1);
@@ -108,5 +125,6 @@
         private System.Windows.Forms.Button bt_edita;
         private System.Windows.Forms.Button bt_novo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt_pagar;
     }
 }

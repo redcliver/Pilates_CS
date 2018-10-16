@@ -20,7 +20,7 @@ namespace Pilates_CS
             string query = "SELECT * FROM plano WHERE plano_id=@idPlan";
             conexao conexao = new conexao();
             conexao.conectar();
-            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.con);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.conn);
             cmd.Parameters.AddWithValue("@idPlan", planId);
             NpgsqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
@@ -65,7 +65,7 @@ namespace Pilates_CS
             conexao conexao = new conexao();
             conexao.conectar();
             NpgsqlCommand cmd = new NpgsqlCommand();
-            cmd.Connection = conexao.con;
+            cmd.Connection = conexao.conn;
             cmd.CommandText = query;
             cmd.Parameters.AddWithValue("idPlan", planid);
             cmd.Parameters.AddWithValue("n", nome);

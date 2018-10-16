@@ -28,8 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bt_fecha = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataSet2 = new Pilates_CS.DataSet2();
+            this.dataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_fecha
@@ -58,12 +63,22 @@
             this.label1.Text = "Balanço mensal";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // dataSet2
+            // 
+            this.dataSet2.DataSetName = "DataSet2";
+            this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet2BindingSource
+            // 
+            this.dataSet2BindingSource.DataSource = this.dataSet2;
+            this.dataSet2BindingSource.Position = 0;
+            // 
             // fm_mensal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1144, 400);
+            this.ClientSize = new System.Drawing.Size(1144, 429);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -72,6 +87,9 @@
             this.Name = "fm_mensal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fm_mensal";
+            this.Load += new System.EventHandler(this.fm_mensal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +99,7 @@
 
         private System.Windows.Forms.Button bt_fecha;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource dataSet2BindingSource;
+        private DataSet2 dataSet2;
     }
 }

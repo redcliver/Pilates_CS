@@ -35,6 +35,10 @@
             this.tb_valor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.rb_credito = new System.Windows.Forms.RadioButton();
+            this.rb_debito = new System.Windows.Forms.RadioButton();
+            this.rb_dinheiro = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt_fecha
@@ -70,7 +74,7 @@
             this.tb_desc.Location = new System.Drawing.Point(23, 158);
             this.tb_desc.Multiline = true;
             this.tb_desc.Name = "tb_desc";
-            this.tb_desc.Size = new System.Drawing.Size(319, 85);
+            this.tb_desc.Size = new System.Drawing.Size(251, 85);
             this.tb_desc.TabIndex = 33;
             // 
             // label4
@@ -113,12 +117,63 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "Entrada";
             // 
+            // rb_credito
+            // 
+            this.rb_credito.AutoSize = true;
+            this.rb_credito.Font = new System.Drawing.Font("Segoe Print", 11.25F);
+            this.rb_credito.Location = new System.Drawing.Point(324, 208);
+            this.rb_credito.Name = "rb_credito";
+            this.rb_credito.Size = new System.Drawing.Size(127, 30);
+            this.rb_credito.TabIndex = 45;
+            this.rb_credito.TabStop = true;
+            this.rb_credito.Text = "Cartão Cred.";
+            this.rb_credito.UseVisualStyleBackColor = true;
+            // 
+            // rb_debito
+            // 
+            this.rb_debito.AutoSize = true;
+            this.rb_debito.Font = new System.Drawing.Font("Segoe Print", 11.25F);
+            this.rb_debito.Location = new System.Drawing.Point(324, 185);
+            this.rb_debito.Name = "rb_debito";
+            this.rb_debito.Size = new System.Drawing.Size(120, 30);
+            this.rb_debito.TabIndex = 44;
+            this.rb_debito.TabStop = true;
+            this.rb_debito.Text = "Cartão Deb.";
+            this.rb_debito.UseVisualStyleBackColor = true;
+            // 
+            // rb_dinheiro
+            // 
+            this.rb_dinheiro.AutoSize = true;
+            this.rb_dinheiro.Font = new System.Drawing.Font("Segoe Print", 11.25F);
+            this.rb_dinheiro.Location = new System.Drawing.Point(324, 162);
+            this.rb_dinheiro.Name = "rb_dinheiro";
+            this.rb_dinheiro.Size = new System.Drawing.Size(93, 30);
+            this.rb_dinheiro.TabIndex = 43;
+            this.rb_dinheiro.TabStop = true;
+            this.rb_dinheiro.Text = "Dinheiro";
+            this.rb_dinheiro.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(319, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 26);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Método";
+            // 
             // fm_entrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(484, 338);
+            this.Controls.Add(this.rb_credito);
+            this.Controls.Add(this.rb_debito);
+            this.Controls.Add(this.rb_dinheiro);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_fecha);
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.tb_desc);
@@ -146,5 +201,9 @@
         private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rb_credito;
+        private System.Windows.Forms.RadioButton rb_debito;
+        private System.Windows.Forms.RadioButton rb_dinheiro;
+        private System.Windows.Forms.Label label3;
     }
 }

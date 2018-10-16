@@ -20,7 +20,7 @@ namespace Pilates_CS
             string query = "SELECT * FROM profissional WHERE prof_id=@idPro";
             conexao conexao = new conexao();
             conexao.conectar();
-            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.con);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.conn);
             cmd.Parameters.AddWithValue("@idPro", proId);
             NpgsqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
@@ -60,7 +60,7 @@ namespace Pilates_CS
             conexao conexao = new conexao();
             conexao.conectar();
             NpgsqlCommand cmd = new NpgsqlCommand();
-            cmd.Connection = conexao.con;
+            cmd.Connection = conexao.conn;
             cmd.CommandText = query;
             cmd.Parameters.AddWithValue("idPro", proid);
             cmd.Parameters.AddWithValue("n", nome);

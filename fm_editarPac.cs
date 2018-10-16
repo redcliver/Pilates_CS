@@ -21,7 +21,7 @@ namespace Pilates_CS
             string query = "SELECT * FROM paciente WHERE paciente_id=@idPac";
             conexao conexao = new conexao();
             conexao.conectar();
-            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.con);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conexao.conn);
             cmd.Parameters.AddWithValue("@idPac", pacId);
             NpgsqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
@@ -33,6 +33,7 @@ namespace Pilates_CS
                 dp_data_nasc.Text = (dr["data_nasc"].ToString());
                 tb_queixa.Text = (dr["queixa"].ToString());
                 tb_objetivo.Text = (dr["objetivo"].ToString());
+                lb_nAulas.Text = (dr["aulas"].ToString());
                 try
                 {
                     string id_str = (dr["paciente_id"].ToString());
@@ -93,7 +94,7 @@ namespace Pilates_CS
             conexao conexao = new conexao();
             conexao.conectar();
             NpgsqlCommand cmd = new NpgsqlCommand();
-            cmd.Connection = conexao.con;
+            cmd.Connection = conexao.conn;
             cmd.CommandText = query;
             cmd.Parameters.AddWithValue("idPac", pacid);
             cmd.Parameters.AddWithValue("n", nome);

@@ -35,5 +35,12 @@ namespace Pilates_CS
             fm_editConta fmEditCon = new fm_editConta();
             fmEditCon.ShowDialog();
         }
+
+        private void bt_pagar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fm_pag_conta fmPagCont = new fm_pag_conta();
+            fmPagCont.ShowDialog();
+        }
     }
 }
